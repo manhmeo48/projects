@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Danh sách công việc</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h2>Danh sách công việc</h2>
+        <div class="input-group">
+            <input type="text" id="nhap-cong-viec" placeholder="Nhập công việc...">
+            <button id="them-cong-viec">Thêm</button>
+        </div>
+        <div class="filter-group">
+            <button class="loc active" data-filter="Tất cả">Tất cả</button>
+            <button class="loc" data-filter="Chưa hoàn thành">Chưa hoàn thành</button>
+            <button class="loc" data-filter="Hoàn thành">Hoàn thành</button>
+        </div>
+        <ul id="danh-sach"></ul>
+        <p id="dem-cong-viec">0 công việc còn lại</p>
+    </div>
+    <script src="scripts.js"></script>
+</body>
+</html>
